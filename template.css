@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+.logo {
+    margin: 16px;
+    padding: 5px;
+    color: white;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.navigation li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 6px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 8px;
+}
+
+.download-btn {
+    background-color: #0066CC;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 150px;
+    color: white;
+}
+
+.banner {
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgba(45, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%) , url("https://demo.templateflip.com/material-landing/img/panorama-3094696_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.banner-content {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.banner-content-child {
+    padding-left: 40px;
+    margin-top: 40px;
+    width: 100%;
+
+}
+
+.text-white {
+    width: 100%
+}
+
+.text-white h2 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.text-white p {
+    width: 85%;
+}
+
+.btn1 {
+    background-color: blue;
+
+}
+
+.view-btn {
+    margin: 6px 6px 6px 0px;
+    padding: 12px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.learn-btn {
+    margin: 6px 6px 6px 0px;
+    padding: 12px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* 
+.banner-bottom-card_child{
+    background-color: white;
+    width: 100%;
+}
+
+.card-first{
+    background: #8d00c4;
+    padding: 60px;
+    color: #ffffff;
+    /* width: 25%; */
+/* margin: 0 !important;
+}
+.card-second{
+    background-color: #b600be;
+    padding: 48px;
+    color: #ffffff;
+    /* width: 25%; */
+
+/* }
+.card-third{
+    background-color: #12ad9a;
+    padding: 48px;
+    color: #ffffff;
+    width: 25%;
+}
+.card-forth{
+    background-color: #4ba9f8;
+    padding: 60px;
+    color: #ffffff;
+    width: 25%;
+}  */
+
+.explorer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card{
+    width: 25%;
+    color: white;
+    height: 100px;
+    padding: 48px;
+    border-radius: unset !important;
+}
+
+.card.purple{
+    background-color: #8d00c4;
+}
+
+.card.violet{
+    background-color: #b600be;
+}
+.card.green{
+    background-color: #12ad9a;
+}
+.card.blue{
+    background-color: #4ba9f8;
+}
+.icon{
+    font-size: 30px;
+    margin: 15px;
+}
+
+.container-content{
+    justify-content: center;
+    text-align: center;
+}
+.container-content-first{
+    margin: 50px; 
+}
+
+.container-content-second{
+    color: #888;
+    font-size: 25px;
+}
+
+.three-images{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
