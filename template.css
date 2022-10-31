@@ -1,31 +1,36 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
     left: 0;
     right: 0;
+    background-color: rgba(255, 255, 255, 0.2);
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.3)
 }
 
 .logo {
-    margin: 16px;
-    padding: 5px;
+    /*margin: 16px;
+    padding: 5px;*/
+    justify-content: center;
     color: white;
+    margin-top: 24px;
+    margin-left: 80px;
 }
 
 .navigation {
-    margin: 0;
-    padding: 0;
+    /*margin: 0;
+    padding: 0;*/
     text-align: right;
+    justify-content: center;
+    margin-right: 80px;
 }
 
 .navigation li {
     list-style-type: none;
     display: inline-block;
-    margin-left: 6px;
 }
 
 .navigation li a {
@@ -36,11 +41,12 @@ header {
 
 .download-btn {
     background-color: #0066CC;
-    padding: 8px;
+    padding: 15px;
     margin: 10px;
     border-radius: 5px;
-    width: 150px;
+    width: 155px;
     color: white;
+    border: none;
 }
 
 .banner {
@@ -49,19 +55,16 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
 }
 
 .banner-content {
     min-height: 100vh;
     display: flex;
     align-items: center;
-
+    margin-left: 80px;
 }
 
 .banner-content-child {
-    padding-left: 40px;
-    margin-top: 40px;
     width: 100%;
 
 }
@@ -79,70 +82,38 @@ header {
     width: 85%;
 }
 
-.btn1 {
-    background-color: blue;
-
-}
 
 .view-btn {
     margin: 6px 6px 6px 0px;
-    padding: 12px;
+    padding: 10px;
     width: 150px;
-    border-radius: 5px;
+    border-radius: 3px;
+    border: none;
 }
+
 
 .learn-btn {
     margin: 6px 6px 6px 0px;
-    padding: 12px;
+    padding: 10px;
     width: 150px;
-    border-radius: 5px;
+    border-radius: 4px;
+    border-color: white;
+    color: white;
     background-color: rgba(255, 255, 255, 0);
 }
 
-/* 
-.banner-bottom-card_child{
-    background-color: white;
-    width: 100%;
-}
-
-.card-first{
-    background: #8d00c4;
-    padding: 60px;
-    color: #ffffff;
-    /* width: 25%; */
-/* margin: 0 !important;
-}
-.card-second{
-    background-color: #b600be;
-    padding: 48px;
-    color: #ffffff;
-    /* width: 25%; */
-
-/* }
-.card-third{
-    background-color: #12ad9a;
-    padding: 48px;
-    color: #ffffff;
-    width: 25%;
-}
-.card-forth{
-    background-color: #4ba9f8;
-    padding: 60px;
-    color: #ffffff;
-    width: 25%;
-}  */
 
 .explorer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    margin-bottom: -100px;
 }
 
 .card{
     width: 25%;
     color: white;
-    height: 100px;
     padding: 48px;
     border-radius: unset !important;
 }
@@ -164,24 +135,313 @@ header {
     font-size: 30px;
     margin: 15px;
 }
-
+.work{
+    background-color: #f5f5f5 
+}
+.work-box{
+    margin: 100px;
+}
 .container-content{
     justify-content: center;
     text-align: center;
+    padding: 50px;
 }
 .container-content-first{
-    margin: 50px; 
-}
-
-.container-content-second{
-    color: #888;
-    font-size: 25px;
+    margin: 30px; 
 }
 
 .three-images{
-    padding: 30px;
     display: flex;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
+}
+
+.design, .feedback, .execution{
+    margin: 13px;
+}
+.design-para, .feedback-para, .execution-para{
+    color: grey;
+    padding: 10px;
+    margin: 13px;
+}
+.project-box{
+    margin: 92px;
+}
+
+.project{
+    text-align: center;
+    justify-content: center;
+    margin: 54px;
+}
+.project-heading{
+    margin: 30px;
+}
+
+.project-content{
+    width: 100%;
+}
+
+.project-image{
+    height: 300px;
+    background-image: url("https://demo.templateflip.com/material-landing/img/kuala-lumpur.jpg");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    margin-top: 20px;
+    box-shadow: 0.7rem;
+    border-radius: 5px;
+}
+
+.education-content{
+    position: relative; 
+    padding: 14px;
+}
+
+
+.education-content .all-icon{
+    position: absolute;
+    left: -50px;
+    font-size: 29px;
+}
+
+.marketing{
+    margin-left: 50px;
 
 }
+.marketing-image{
+    background-image: url("https://demo.templateflip.com/material-landing/img/san-francisco.jpg");
+    height: 300px;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    margin-top: 20px;
+    box-shadow: 0.7rem;
+    border-radius: 5px;
+    margin-left: 90px;
+}
+.marketing-content{
+    position: relative;
+    padding: 14px;
+}
+
+.marketing-content .all-icon{
+    position: absolute;
+    left: -50px;
+    font-size: 29px;
+}
+
+.pricing{
+    text-align: center;
+    justify-content: center;
+    margin: 120px;
+}
+.pricing-heading{
+    padding: 60px;
+    color: white;
+}
+
+.pricing-card-image{
+    background-image: url("https://demo.templateflip.com/material-landing/img/architecture.jpg");
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+    background-size: cover;
+    background-position-x: center;
+        
+}
+
+.card-body{
+    text-align: center; 
+    justify-content: center;
+    margin-bottom: 100px;
+    height: 615px;
+}
+.display-middle{
+    padding: 25px;
+
+}
+
+.individual{
+    padding: 25px;
+}
+.display-middle .display-1{
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 1.2;
+    position:relative;
+}
+.display-middle .display-2{
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.display-middle .display-3{
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 1.2;
+    position: relative;
+}
+.card-list{
+    list-style-type: none;
+    justify-content: center;
+    padding: 60px;
+}
+
+.buy-btn{
+    margin: 35px;
+    padding: 8px;
+    width: 110px;
+    border-radius: 1px;
+    background: transparent;
+    border-color: white;
+    color: white;
+}
+
+.member{
+    text-align: center;
+    justify-content: center;
+    margin: 125px;
+}
+.member-heading{
+    margin-top: -20px;
+}
+
+.member-left{
+    height: 215px;
+    width: 205px;
+    box-shadow: 0.7rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.member-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px grey;
+}
+.member-right{
+    text-align: left;
+    justify-content: left;
+    position: relative;
+    padding: 18px;
+    margin-left: 213px;
+    margin-top: -18px;
+    line-height: 1.2;
+}
+.member-right-head{
+    margin-bottom: 15px;
+}
+.member-para{
+    color: grey
+}
+.member-bottom{
+    margin-top: 70px;
+}
+.member-bottom-lower{
+    margin-top: 70px;
+}
+
+
+.contact{
+    background: url('https://demo.templateflip.com/material-landing/img/panorama-3094696_1920.jpg'),linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;   
+}
+.contact-box{
+    margin: 90px 90px 0 90px;
+    padding: 15px;
+}
+.contact-head{
+    text-align: center;
+    justify-content: center;
+    margin: 55px;
+    color: white;
+}
+
+.contact-lower{
+    border-radius: 5px;
+}
+.contact-heading{
+    padding: 24px;
+}
+
+.contact-bottom{
+    height: 550px;
+}
+.contact-bottom-left{
+    margin: 45px ;
+}
+.contact-bottom-right{
+    margin: 30px;
+}
+ 
+.Send-btn{
+    width: 120px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: blue;
+    color: white;
+    border: none;
+} 
+
+input{
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+}
+
+.form-line1, .form-line2, .form-line3{
+    padding-bottom: 60px;
+}
+.contact-list{
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+}
+.contact-list-bottom{
+    padding: 10px;
+}
+
+ .footer{
+    padding: 20px;
+    font-size: 25px;
+    background-color: #4800a1;
+ }
+.footer-content{
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+.px-3{
+    color: white;
+    margin: 5px;
+}
+.footer-lower{
+    padding: 15px;
+    background-color: #4a0082;;
+    overflow: hidden;
+}
+.footer-lower-body{
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+.footer-lower-body a{
+    color: white;
+    text-decoration: none;
+}
+
+/*@media (max-width:500px) and (min-width:300px){
+
+}*/
